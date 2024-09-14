@@ -105,7 +105,7 @@ def get_mask_decision(image: np.ndarray, mask: np.ndarray) -> bool:
         return False
     else:
         print("Invalid input, please press 'y' or 'n'.")
-        return get_mask_decision()
+        return get_mask_decision(image, mask)
 
 
 def annotate_image(image: np.ndarray) -> np.ndarray:
